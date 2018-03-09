@@ -27,14 +27,18 @@ print("ndarray sliced with lower & upper bound: ", a[2:7])
 a = np.array([[1,2,3],[4,5,6],[7,8,9]])
 print("ndarray multidimensional slicing: ", a[1:])
 
-# ndarray multi dimensional get columns 
+# ndarray multi dimensional get column 
 a = np.array([[1,2,3],[4,5,6],[7,8,9]])
 print("ndarray multidimensional column: ", a[...,1])
 
-# ndarray multi dimensional get rows 
+# ndarray multi dimensional get row
 a = np.array([[1,2,3],[4,5,6],[7,8,9]])
 print("ndarray multidimensional row: ", a[1,...])
 
 # ndarray multi dimensional slice and get columns 
 a = np.array([[1,2,3],[4,5,6],[7,8,9]])
 print("ndarray multidimensional slice & get columns: ", a[...,1:])
+
+# ndarray multi dimensional slice and get rows
+a = np.array([[1,2,3],[4,5,6],[7,8,9]])
+print("ndarray multidimensional slice & get rows: ", a[1:,...])
